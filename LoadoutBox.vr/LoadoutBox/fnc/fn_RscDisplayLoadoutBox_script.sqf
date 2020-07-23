@@ -31,6 +31,17 @@ switch _mode do {
 			["engineer", "explosiveSpecialist", "medic", "UAVHacker"] apply {
 				player setUnitTrait [_x, getNumber(_cfgLoadout>>_x) == 1];
 			};
+			//--- Ace stuff:
+			if (isClass(configFile >> "CfgPatches" >> "medical_treatment") then {
+				//--- Ace medical system is loaded
+				_aceMedicLevel = getNumber(_cfgLoadout >> "Ace_medical_medicClass");
+				player setVariable ["Ace_medical_medicClass", _aceMedicLevel];
+			};
+			if (isClass(configFile >> "CfgPatches" >> "repair") then {
+				//--- Ace repair system is loaded
+				_aceEngineerLevel = getNumber(_cfgLoadout >> "ACE_IsEngineer");
+				player setVariable ["ACE_IsEngineer", _aceEngineerLevel];
+			};
 		};
 	};
 };

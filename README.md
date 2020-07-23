@@ -39,6 +39,10 @@ The config follows the same structure as description.ext's [CfgRespawnInventory]
   - medic
   - UAVHacker
 
+Attributes for use with ace:
+- Ace_medical_medicClass (0, 1, 2)
+- ACE_IsEngineer (0, 1, 2)
+
 Example `CfgLoadoutBox`:
 ```cpp
 class CfgLoadoutBox
@@ -64,6 +68,9 @@ class CfgLoadoutBox
 			explosiveSpecialist = 1;
 			medic = 1;
 			UAVHacker = 1;
+			// Traits for ACE (optional):
+			Ace_medical_medicClass = 1;
+			ACE_IsEngineer = 1;
 		};
 	};
 };
