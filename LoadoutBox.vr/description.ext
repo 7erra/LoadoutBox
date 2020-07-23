@@ -1,0 +1,5 @@
+#include "LoadoutBox\CfgLoadoutBox.hpp"
+class CfgFunctions
+{
+	#include "LoadoutBox\CfgFunctions.hpp"
+};
