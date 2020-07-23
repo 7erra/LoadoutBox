@@ -20,7 +20,7 @@ class CfgFunctions
 ## Customization
 The config follows the same structure as description.ext's [CfgRespawnInventory](https://community.bistudio.com/wiki/Description.ext#CfgRespawnInventory).
 1. Export a loadout from the Arsenal with `CTRL + SHIFT + C`
-2. Open the [CfgLoadoutBox.hpp](LoadoutBox.vr\LoadoutBox\CfgLoadoutBox.hpp)
+2. Open the [CfgLoadoutBox.hpp](LoadoutBox.vr/LoadoutBox/CfgLoadoutBox.hpp)
 3. Create a new class, eg `class Test1`.
 4. Paste the loadout under the new class.
 5. Add a `displayName` and an optional `icon`.
