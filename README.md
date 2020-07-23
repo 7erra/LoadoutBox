@@ -1,5 +1,14 @@
 # Loadout Box
-## Setup:
+<p align="center">
+  <img src="img/loadoutbox.png">
+</p>
+
+*Figure 1: The Loadout Box UI ingame.*
+
+## Purpose
+This script adds a simple way for mission makers to give players fast access to loadouts defined in the mission's config.
+
+## Setup
 The provided [LoadouBox.vr](LoadoutBox.vr) folder is a ready to go mission.
 1. Drop the LoadoutBox folder into your mission folder where the mission.sqm is.
 2. Create a description.ext in the same location.
