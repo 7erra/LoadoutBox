@@ -5,7 +5,7 @@ class RscDisplayLoadoutBox
 	onUnload = ["onUnload", _this] call TER_fnc_RscDisplayLoadoutBox_script;
 	class controlsBackground
 	{
-		class Background: RscText
+		class Background: RscText_lbox
 		{
 			x = 13.5 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
 			y = 3.5 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
@@ -16,7 +16,7 @@ class RscDisplayLoadoutBox
 	};
 	class controls
 	{
-		class Title: RscText
+		class Title: RscText_lbox
 		{
 			text = "Loadout Box"; //--- ToDo: Localize;
 			x = 13.5 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
@@ -25,7 +25,7 @@ class RscDisplayLoadoutBox
 			h = 1 * GUI_GRID_CENTER_H;
 			colorBackground[] = GUI_BCG_COLOR;
 		};
-		class Loadouts: RscListbox
+		class Loadouts: RscListbox_lbox
 		{
 			idc = IDC_RSCDISPLAYLOADOUTBOX_LOADOUTS;
 			x = 14 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
@@ -34,14 +34,14 @@ class RscDisplayLoadoutBox
 			h = 15.8 * GUI_GRID_CENTER_H;
 			rowHeight = 2 * GUI_GRID_CENTER_H;
 		};
-		class Ok: RscButtonMenuOK
+		class Ok: RscButtonMenuOK_lbox
 		{
 			x = 14 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
 			y = 19.9 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
 			w = 12.5 * GUI_GRID_CENTER_W;
 			h = 1 * GUI_GRID_CENTER_H;
 		};
-		class Cancel: RscButtonMenuCancel
+		class Cancel: RscButtonMenuCancel_lbox
 		{
 			x = 14 * GUI_GRID_CENTER_W + GUI_GRID_CENTER_X;
 			y = 21 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;

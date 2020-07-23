@@ -1,4 +1,4 @@
-class RscText
+class RscText_lbox
 {
 	deletable = 0;
 	fade = 0;
@@ -23,7 +23,7 @@ class RscText
 	tooltipColorBox[] = {1,1,1,1};
 	tooltipColorShade[] = {0,0,0,0.65};
 };
-class RscListBox
+class RscListBox_lbox
 {
 	text = "";
 	deletable = 0;
@@ -79,7 +79,7 @@ class RscListBox
 	period = 1.2;
 	maxHistoryDelay = 1;
 };
-class RscShortcutButton
+class RscShortcutButton_lbox
 {
 	deletable = 0;
 	fade = 0;
@@ -194,7 +194,7 @@ class RscShortcutButton
 		align = "left";
 	};
 };
-class RscButtonMenu: RscShortcutButton
+class RscButtonMenu_lbox: RscShortcutButton_lbox
 {
 	idc = -1;
 	type = CT_SHORTCUTBUTTON;
@@ -280,7 +280,7 @@ class RscButtonMenu: RscShortcutButton
 		1
 	};
 };
-class RscButtonMenuOK: RscButtonMenu
+class RscButtonMenuOK_lbox: RscButtonMenu_lbox
 {
 	idc = 1;
 	shortcuts[] =
@@ -299,7 +299,7 @@ class RscButtonMenuOK: RscButtonMenu
 		1
 	};
 };
-class RscButtonMenuCancel: RscButtonMenu
+class RscButtonMenuCancel_lbox: RscButtonMenu_lbox
 {
 	idc = 2;
 	shortcuts[] =
